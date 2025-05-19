@@ -32,11 +32,11 @@ export const TodoList: React.FC<Props> = ({
       break;
 
     case Filter.active:
-      todosCopy = [...visibleTodos].filter(todo => !todo.completed);
+      todosCopy = visibleTodos.filter(todo => !todo.completed);
       break;
 
     case Filter.completed:
-      todosCopy = [...visibleTodos].filter(todo => todo.completed);
+      todosCopy = visibleTodos.filter(todo => todo.completed);
       break;
 
     default:

@@ -66,6 +66,7 @@ export const Header: React.FC<Props> = ({
           value={title}
           onChange={event => setTitle(event.target.value)}
           disabled={isLoading}
+          autoFocus
         />
       </form>
     </header>
